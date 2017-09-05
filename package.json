@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "express": "^4.13.3",
     "react": "^15.6.1",
     "react-router": "^4.2.0",
@@ -11,10 +11,8 @@
     "redux": "^3.0.0",
     "redux-thunk": "^2.2.0",
     "history": "4.7.2",
-    "classnames" : "^2.1.5",
-    "axios": "^0.16.2"
-  },
-  "devDependencies": {
+    "classnames": "^2.1.5",
+    "axios": "^0.16.2",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -30,7 +28,7 @@
     "react-transform-hmr": "^1.0.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0",
-    "merge":"^1.2.0",
+    "merge": "^1.2.0",
     "extract-text-webpack-plugin": "^3.0.0"
   },
   "scripts": {
@@ -38,5 +36,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react-scripts": "^1.0.13"
   }
 }
