@@ -15,7 +15,7 @@ class ResumeSkills extends Component {
 
     return (
       <section className="skills">
-        <h2 className="text-uppercase"><i className="fa fa-lg fa-code"></i> Skills</h2>
+        <h2 className="text-uppercase"><i className="fa fa-lg fa-laptop"></i> Skills</h2>
         {getSkills}
       </section>
     );

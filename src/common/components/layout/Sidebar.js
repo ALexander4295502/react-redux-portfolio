@@ -19,20 +19,19 @@ class Sidebar extends Component {
       <div className="sidebar">
 
         <div className="sidebar-item sidebar-footer">
-          <p>I built this site with Redux and React. You can get the <a href="https://github.com/ALexander4295502/react-redux-portfolio">source code here</a></p>
+          <p>I built this site with Redux and React. You can get the <a href="https://github.com/ALexander4295502/react-redux-portfolio" target="_blank">source code here</a></p>
         </div>
 
         <nav className="sidebar-nav">
           <NavLink to="/home" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</NavLink>
           <NavLink to="/resume" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Resume</NavLink>
           <NavLink to="/projects" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Projects</NavLink>
-          <NavLink to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About</NavLink>
         </nav>
 
         <div className="sidebar-item sidebar-footer">
 
           <p>
-            Visit <a href="https://github.com/ALexander4295502">My GitHub Repo</a><br/>
+            Visit <a href="https://github.com/ALexander4295502" target="_blank">My GitHub Repo</a><br/>
           </p>
 
         </div>

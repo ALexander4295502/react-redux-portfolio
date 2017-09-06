@@ -13,6 +13,11 @@ class Home extends Component {
     this.props.toggleSidebar(!this.props.layout.sidebarOpen)
   }
 
+  openNewPage(e){
+    e.preventDefault();
+    window.open(e.target.href,'_blank')
+  }
+
   render() {
     return (
 
@@ -72,7 +77,7 @@ class Home extends Component {
           </div>
 
           <div className="exclaimation">
-            <em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/caljrimmer/portfolio-redux-app">github repo here</a>.</em><br/>
+            <em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/ALexander4295502/react-redux-portfolio" onClick={this.openNewPage}>github repo here</a>.</em><br/>
           </div>
 
         </div>
