@@ -33,7 +33,7 @@
 
 .portfolio_item .role {
     float: left;
-    color: #1db7a9;
+    color: #2980b9;
     font-size: 30px;
     font-weight: bold;
     text-transform:uppercase;
@@ -46,7 +46,7 @@
     font-size: 22px;
     font-weight: bold;
     margin: 10px;
-    color: #1db7a9;
+    color: #2980b9;
     line-height: 24px;
     text-align: right;
 }

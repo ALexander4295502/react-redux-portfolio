@@ -38,7 +38,7 @@ body {
   height: 35%;
   width: 35%;
   animation: pulse 0.75s ease-in infinite alternate;
-  background-color: #1db7a9;
+  background-color: #2980b9;
 }
 
 .an_delay {
@@ -137,7 +137,7 @@ ul.clients li.shipserv-logo {
 }
 
 .skill-item ul li em {
-   background: #1db7a9;
+   background: #2980b9;
    display:inline-block;
    float:left;
    color:#fff;
@@ -150,7 +150,7 @@ ul.clients li.shipserv-logo {
 
 .skill-item ul ul li em {
    background: #d9ead3;
-   color: #1db7a9;
+   color: #2980b9;
 }
 
 .exclaimation {
@@ -163,7 +163,7 @@ ul.clients li.shipserv-logo {
 */
 
 .contact-banner {
-  background:#1db7a9;
+  background:#2980b9;
   color:#d9ead3;
   text-align:center;
 }
