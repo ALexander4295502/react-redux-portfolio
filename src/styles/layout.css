@@ -312,6 +312,10 @@ a.sidebar-nav-item:focus {
   margin-bottom: 6em;
 }
 
+.banner p {
+  font-size: 1.3em;
+}
+
 .banner a {
   border-bottom: 1px dotted #2980b9;
   text-decoration:none;
@@ -340,6 +344,7 @@ a.sidebar-nav-item:focus {
   padding:0em 0.3em 0em;
   margin:0.1em;
   font-style:normal;
+  box-shadow:2px 2px 2px #ccc;
 }
 
 /* Meta data line below post title */

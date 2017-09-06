@@ -38,7 +38,7 @@ class App extends Component {
       <div className={layoutClass}>
         <Sidebar layout={layout} toggleSidebar={toggleSidebar} />
         <div className="wrap" onClick={this.clickCloseToggleSidebar}>
-          <Header/>
+          <Header layout={layout} toggleSidebar={toggleSidebar} />
           <div className="container content">
             {!this.props.children && <Home layout={layout} toggleSidebar={toggleSidebar} />}
             {this.props.children}

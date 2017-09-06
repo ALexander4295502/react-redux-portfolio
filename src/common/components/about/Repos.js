@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 export default class Repos extends Component {
+
   render() {
     return (
       <div>
-        {this.props.results.map((repo, i) =>
+        {this.props.results.filter(repo => repo.description !== null).map((repo, i) =>
           <div className="repo-item" key={i}>
-            <a href={repo.html_url}>{repo.name}</a><br/>
-            {repo.description}
+            <a href='https://google.com' target="_blank">{repo.name}</a><br/>
+            <p>{repo.description}</p>
           </div>
         )}
       </div>

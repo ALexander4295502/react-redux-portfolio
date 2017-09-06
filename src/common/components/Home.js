@@ -20,7 +20,7 @@ class Home extends Component {
 
         <div className="post banner">
           <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>user-friendly</em> web applications.</h1>
-          <p>for <em>course project</em>, <em>internship</em> and sometimes, <em>myself</em>. <a href="#" onClick={this.eventToggleSidebar}> Find out More</a></p>
+          <p>for <em>course project</em>, <em>internship</em> and sometimes, <em>myself</em>. <a href="/home" onClick={this.eventToggleSidebar}> Find out More</a></p>
 
         </div>
 
