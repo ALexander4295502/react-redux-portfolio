@@ -1,21 +1,16 @@
-import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import Repos from './about/Repos';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import Loader from './layout/Loader';
 import Banner from './layout/Banner';
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.props.fetchReposIfNeeded();
   }
 
   render () {
-    const { results, isFetching, lastUpdated, error } = this.props;
+    // const { results, isFetching, lastUpdated, error } = this.props;
     return (
       <div>
 

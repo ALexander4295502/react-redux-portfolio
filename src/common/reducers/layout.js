@@ -1,6 +1,10 @@
 import { TOGGLE_SIDEBAR } from '../actions/layout';
 
-export default function layout(state = {sidebarOpen: false}, action) {
+const initState = {
+  sidebarOpen: false
+};
+
+export default function layout(state = initState, action) {
   switch (action.type) {
     case TOGGLE_SIDEBAR:
       return {

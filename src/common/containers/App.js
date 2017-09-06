@@ -13,11 +13,19 @@ class App extends Component {
   constructor(props){
     super(props);
     this.eventToggleSidebar = this.eventToggleSidebar.bind(this);
+    this.clickCloseToggleSidebar = this.clickCloseToggleSidebar.bind(this);
   }
 
   eventToggleSidebar(e) {
     e.preventDefault();
     this.props.toggleSidebar(!this.props.layout.sidebarOpen);
+  }
+
+  clickCloseToggleSidebar(e) {
+    e.preventDefault();
+    if(this.props.layout.sidebarOpen){
+      this.props.toggleSidebar(!this.props.layout.sidebarOpen);
+    }
   }
 
   render() {
@@ -29,7 +37,7 @@ class App extends Component {
     return (
       <div className={layoutClass}>
         <Sidebar layout={layout} toggleSidebar={toggleSidebar} />
-        <div className="wrap">
+        <div className="wrap" onClick={this.clickCloseToggleSidebar}>
           <Header/>
           <div className="container content">
             {!this.props.children && <Home layout={layout} toggleSidebar={toggleSidebar} />}

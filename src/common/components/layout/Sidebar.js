@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 class Sidebar extends Component {
 
@@ -23,20 +23,16 @@ class Sidebar extends Component {
         </div>
 
         <nav className="sidebar-nav">
-          <Link to="/home" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</Link>
-          <Link to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Portfolio</Link>
-          <Link to="/services" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Services</Link>
-          <Link to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About</Link>
+          <NavLink to="/home" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</NavLink>
+          <NavLink to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Portfolio</NavLink>
+          <NavLink to="/services" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Services</NavLink>
+          <NavLink to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About</NavLink>
         </nav>
 
         <div className="sidebar-item sidebar-footer">
 
           <p>
             Visit <a href="https://github.com/ALexander4295502">My GitHub Repo</a><br/>
-          </p>
-
-          <p>
-            Design based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a>
           </p>
 
         </div>
