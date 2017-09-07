@@ -5,7 +5,7 @@ import HomePage from "./containers/HomePage";
 import App from './containers/App';
 
 import Resume from "./components/Resume";
-import error404 from './components/404';
+import NotFoundPage from './containers/404Page';
 import ProjectsPage from "./containers/ProjectsPage";
 
 export default (
@@ -14,7 +14,7 @@ export default (
           <Route path="/home" component={HomePage} />
           <Route path="/resume" component={Resume} />
           <Route path="/projects" component={ProjectsPage} />
-          <Route path="*" component={error404}/>
+          <Route path="*" component={NotFoundPage}/>
         </Switch>
       </App>
 )
