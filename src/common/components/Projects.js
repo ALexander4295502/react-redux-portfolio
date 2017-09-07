@@ -26,7 +26,7 @@ class Projects extends Component {
 
           <p>Now I am working on a forum built by myself. And I use <strong>Angular</strong> to build front-end and use <strong>Node.js</strong> and <strong>MongoDB</strong> as back-end.</p>
           <p>Also there are a lot of feature in it, one of my favorite part is a chatbot by using a <strong>Django</strong> API server to analyse users' input and give the 'human like' feedback.</p>
-          <p>You can access my forum by <a href="https://forum.zheng.towns">my forum</a>. </p>
+          <p>You can access my forum by <a href="https://forum.zheng.town" onClick={this.openNewPage}>my forum</a>. </p>
           <p>Feel free to add posts and comments if you want to say something.</p>
 
         </div>
