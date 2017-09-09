@@ -34,7 +34,7 @@ class Home extends Component {
           <h2>Technologies I build with:</h2>
 
           <div className="skill-item clearfix">
-            <h4>Client Side JS</h4>
+            <h4>Client Side</h4>
             <ul className="">
               <li><em>Angular</em></li>
               <li><em><b>*</b>React</em>
@@ -49,7 +49,7 @@ class Home extends Component {
 
 
           <div className="skill-item clearfix">
-            <h4>Server Side JS</h4>
+            <h4>Server Side</h4>
             <ul>
               <li><em>Node</em></li>
               <li><em>Django</em></li>
