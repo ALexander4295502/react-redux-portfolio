@@ -85,10 +85,10 @@
 }
 
 .tag:hover {
-	background-color: crimson;
+	background-color: #2980b9;
 	color: white;
 }
 
 .tag:hover::after {
-	border-left-color: crimson;
+	border-left-color: #2980b9;
 }

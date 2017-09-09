@@ -17,7 +17,9 @@ export default class Repos extends Component {
             <p>{repo.description}</p>
             <ul className="tags">
               <li>
-                <a href={`https://github.com/ALexander4295502/${repo.name}/search?l=${repo.language}`}
+                <a href={`https://github.com/ALexander4295502/${repo.name}/search?l=${
+                  repo.language === "HTML" ? "JavaScript" : repo.language
+                }`}
                    className="tag"
                    onClick={this.openNewPage}
                 >
