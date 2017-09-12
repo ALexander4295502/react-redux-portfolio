@@ -1,0 +1,123 @@
+
+body section#contact {
+    background: white;
+    margin: 0px auto 30px;
+    text-align: center;
+    padding: 0px 0 200px;
+    width: 100%;
+    max-width: 2000px; }
+body section#contact h1 {
+    margin-bottom: 40px;
+    font-size: 4em;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+
+body label {
+    color: white;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto; }
+form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    box-shadow: 4px 4px 4px #ccc}
+form .field label {
+    position: absolute;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    top: 0;
+    left: 0;
+    background: #2980b9;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1.45em;
+    letter-spacing: 0.075em;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out; }
+form .field label + span {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;;
+    opacity: 0;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12%;
+    font-size: 2.5em;
+    text-shadow: 1px 2px 0 #cd6302;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out; }
+form .field input[type="text"],
+form .field textarea {
+    border: none;
+    background: #E8E9EA;
+    width: 100%;
+    margin: 0;
+    padding: 18px 0;
+    padding-left: 19.5%;
+    color: #2980b9;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;  }
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+    height: 55px;
+    resize: none;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out; }
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+    outline: none; }
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+    padding-bottom: 150px; }
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+    width: 18%;
+    background: #d9ead3;
+    color: #2980b9; }
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+    color: #2980b9; }
+form .field:hover label {
+    width: 18%;
+    background: #2980b9;
+    color: white; }
+form input[type="submit"] {
+    background: #2980b9;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+    margin-top: 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    box-shadow: 4px 4px 4px #ccc}
+form input[type="submit"]:hover {
+    background: #d9ead3;
+    color: #2980b9; }
+form input[type="submit"]:focus {
+    outline: none;
+    background: #2980b9;
+    color: white}

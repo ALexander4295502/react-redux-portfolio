@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Banner from './layout/Banner';
 
 class Home extends Component {
 
@@ -81,8 +80,6 @@ class Home extends Component {
           </div>
 
         </div>
-
-        <Banner />
 
       </div>
 

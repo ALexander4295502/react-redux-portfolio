@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import classNames from 'classnames';
 
 import * as LayoutActions from '../actions/layout';
-import Home from '../components/Home';
 import Header from '../components/layout/Header';
 import Sidebar from '../components/layout/Sidebar';
 
@@ -37,10 +36,9 @@ class App extends Component {
     return (
       <div className={layoutClass}>
         <Sidebar layout={layout} toggleSidebar={toggleSidebar} />
-        <div className="wrap" onClick={this.clickCloseToggleSidebar}>
+        <div className="wrap" onClick={this.props.layout.sidebarOpen ? this.clickCloseToggleSidebar : null}>
           <Header layout={layout} toggleSidebar={toggleSidebar} />
           <div className="container content">
-            {!this.props.children && <Home layout={layout} toggleSidebar={toggleSidebar} />}
             {this.props.children}
           </div>
         </div>

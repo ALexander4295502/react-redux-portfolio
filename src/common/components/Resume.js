@@ -4,6 +4,7 @@ import ResumeEducation from './resume/resume-education';
 import ResumeWork from './resume/resume-work';
 import ResumeSkills from './resume/resume-skills';
 import ResumeProfile from './resume/resume-profile';
+import Banner from './layout/Banner';
 import '../../styles/resume.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
@@ -36,6 +37,7 @@ class Resume extends Component {
             </div>
           </main>
         </div>
+        <Banner/>
       </div>
     );
   }

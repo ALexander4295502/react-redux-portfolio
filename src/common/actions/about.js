@@ -1,4 +1,5 @@
 import request from 'axios';
+import setting from '../settings';
 
 export const INVALIDATE_REPOS = 'INVALIDATE_REPOS';
 export const REPOS_GET = 'REPOS_GET';
@@ -17,7 +18,7 @@ export function invalidateRepos(repos) {
 export function fetchRepos() {
   return {
     type: REPOS_GET,
-    promise: request.get(`https://api.github.com/users/ALexander4295502/repos`)
+    promise: request.get(setting.github_api)
   }
 }
 
