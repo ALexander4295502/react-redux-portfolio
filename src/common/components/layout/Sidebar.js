@@ -19,7 +19,12 @@ class Sidebar extends Component {
       <div className="sidebar">
 
         <div className="sidebar-item sidebar-footer">
-          <p>I built this site with Redux and React. You can get the <a href="https://github.com/ALexander4295502/react-redux-portfolio" target="_blank">source code here</a></p>
+          <p>I built this site with Redux and React.
+            You can get the
+            <a href="https://github.com/ALexander4295502/react-redux-portfolio" target="_blank" rel="noopener noreferrer">
+              source code here
+            </a>
+          </p>
         </div>
 
         <nav className="sidebar-nav">
@@ -32,7 +37,7 @@ class Sidebar extends Component {
         <div className="sidebar-item sidebar-footer">
 
           <p>
-            Visit <a href="https://github.com/ALexander4295502" target="_blank">My GitHub Repo</a><br/>
+            Visit <a href="https://github.com/ALexander4295502" target="_blank" rel="noopener noreferrer">My GitHub Repo</a><br/>
           </p>
 
         </div>

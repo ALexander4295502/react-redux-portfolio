@@ -9,11 +9,13 @@ export const EMAIL_SEND_FAILURE = 'EMAIL_SEND_FAILURE';
 export function sendEmail(name, email, message) {
   return {
     type: EMAIL_SEND,
-    promise: request.post(setting.forum_api+"contact", {
-      name: name,
-      email: email,
-      message: message
-    })
+    promise: request.post(setting.forum_api+"contact",
+      {
+        name: name,
+        email: email,
+        message: message
+      }
+    )
   }
 }
 

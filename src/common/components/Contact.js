@@ -1,75 +1,89 @@
 import React, {Component} from 'react';
 import '../../styles/contact.css';
+import ContactForm from "./contact/contact-form";
+import ContactModal from "./contact/contact-modal";
 
 
 class Contact extends Component {
 
   constructor() {
     super();
-    this.focusHandler = this.focusHandler.bind(this);
     this.submitContact = this.submitContact.bind(this);
-    this.state = {textAreaBlur : false, nameBlur: false, emailBlur: false};
+    this.closeHandler = this.closeHandler.bind(this);
+    this.state = {
+      modalOpen : false,
+      modalTitle: "",
+      modalContent: ""
+    };
   }
 
-  focusHandler(element, val) {
-    if(element === 'textarea') {
-      this.setState({textAreaBlur: val !== ''});
-    }
-    if(element === 'name') {
-      this.setState({nameBlur: val !== ''});
-    }
-    if(element === 'email') {
-      this.setState({emailBlur: val !== ''});
-    }
+  validMail(mail) {
+    return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(mail);
   }
 
-  submitContact(e) {
-    e.preventDefault();
-    console.log(e.target.value);
+
+  submitContact(formData) {
+    return new Promise((resolve, reject) => {
+      if(this.state.modalOpen){
+        resolve(false);
+        return;
+      }
+
+      let email = formData.email;
+      let name = formData.name;
+      let message = formData.message;
+
+      if(email.length === 0 ||
+        name.length === 0 ||
+        message.length === 0
+      ) {
+        this.showModal('Error', 'All fields are required.');
+        resolve(false);
+        return;
+      } else if(!this.validMail(email)) {
+        this.showModal('Error', 'Email format is incorrect.');
+        return;
+      }
+      var self = this;
+      this.props.sendEmail(name, email, message).then(function (sendSuccess) {
+        if(sendSuccess) {
+          self.showModal('Success', self.props.results.msg);
+          resolve(true);
+          return;
+        } else {
+          self.showModal('Error', self.props.error.statusText);
+          resolve(false);
+          return;
+        }
+      });
+    });
+  }
+
+  showModal(title, content){
+    console.log(title);
+    this.setState({
+      modalTitle: title,
+      modalContent: content
+    });
+    this.setState({modalOpen: !this.state.modalOpen});
+  }
+
+  closeHandler(){
+    this.setState({modalOpen: !this.state.modalOpen});
   }
 
   render() {
 
     return (
       <section id="contact">
+        <ContactModal
+          status={this.state.modalOpen}
+          title={this.state.modalTitle}
+          description={this.state.modalContent}
+          closeHandler={this.closeHandler}/>
         <h1>Contact Me</h1>
 
-        <form onSubmit={this.submitContact}>
-          <div className="field name-box">
-            <input type="text"
-                   id="name"
-                   className={this.state.nameBlur ? 'focused' : ''}
-                   placeholder="Who Are You"
-                   onBlur={e => this.focusHandler('name', e.target.value)}/>
-            <label htmlFor="name">Name</label>
-            <span className="ss-icon">check</span>
-          </div>
-
-          <div className="field email-box">
-            <input
-              type="text"
-              id="email"
-              className={this.state.emailBlur ? 'focused' : ''}
-              placeholder="name@email.com"
-              onBlur={e => this.focusHandler('email', e.target.value)}/>
-            <label htmlFor="email">Email</label>
-            <span className="ss-icon">check</span>
-          </div>
-
-          <div className="field msg-box">
-            <textarea
-              id="msg"
-              rows={4}
-              className={this.state.textAreaBlur ? 'focused' : ''}
-              placeholder="Your message goes here..."
-              onBlur={e => this.focusHandler('textarea', e.target.value)}
-            />
-            <label htmlFor="msg">Message</label>
-            <span className="ss-icon">check</span>
-          </div>
-          <input className="button" type="submit" value="Send"/>
-
-        </form>
+        <ContactForm submitHandler={this.submitContact}/>
       </section>
     )
   }
