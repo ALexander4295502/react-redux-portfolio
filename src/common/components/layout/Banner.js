@@ -4,7 +4,7 @@ class Banner extends Component {
   render() {
     return (
       <div className="contact-banner">
-        <p>Contact me at <em>yuan.z@wustl.edu</em> or call <em>314 285 1077</em></p>
+        <p>Contact me at <em>yuanzhengstl@gmail.com</em> or call <em>314-285-1077</em></p>
       </div>
     )
   }

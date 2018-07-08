@@ -18,7 +18,6 @@ class Header extends Component {
         <div className="container">
           <h3 className="masthead-title">
             <NavLink to='/home' onClick={this.eventCloseSidebar} style={{ textDecoration: 'none' }}>Zheng Yuan</NavLink>
-            <small>A EE&CSE Master student at Washington University in St. Louis</small>
           </h3>
         </div>
       </div>

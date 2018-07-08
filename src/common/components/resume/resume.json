@@ -3,16 +3,16 @@
     "name": "Zheng Yuan",
     "label": "A CSE&EE master student at Washington University in St. Louis",
     "picture": "./profilePhoto.jpg",
-    "email": "yuan.z@wustl.edu",
+    "email": "yuanzhengstl@gmail.com",
     "phone": "314-285-1077",
     "website": "http://zhengyuan.com",
     "summary": "Over the past several years I have continuously challenged myself with new languages, frameworks and methodologies. My core languages have always been html, css & javascript but I am also experienced in Java, C#, Python, etc.",
     "location": {
-      "address": "6149 Waterman Blvd",
-      "postalCode": "63112",
-      "city": "St. Louis",
+      "address": "8562 Seawind Way",
+      "postalCode": "94560",
+      "city": "Newark",
       "countryCode": "USA",
-      "region": "MO"
+      "region": "CA"
     },
     "profiles": [
       {
@@ -60,8 +60,8 @@
   "education": [
     {
       "institution": "Washington University in St. Louis",
-      "area": "Computer Science and Electrical Engineering",
-      "studyType": "Master (Double Major)",
+      "area": "Computer Science",
+      "studyType": "Master",
       "startDate": "2016-08-10",
       "endDate": "2018-05-10",
       "gpa": "3.97",

@@ -24,8 +24,8 @@ class Home extends Component {
       <div className="posts">
 
         <div className="post banner">
-          <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>user-friendly</em> web applications.</h1>
-          <p>for <em>course project</em>, <em>internship</em> and sometimes, <em>myself</em>. <a href="/home" onClick={this.eventToggleSidebar}> Find out More</a></p>
+          <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>user-friendly</em> web and mobile applications.</h1>
+          <p>for <em>work</em> and sometimes, <em>myself</em>. <a href="/home" onClick={this.eventToggleSidebar}> Find out More</a></p>
 
         </div>
 
@@ -40,9 +40,10 @@ class Home extends Component {
               <li><em><b>*</b>React</em>
                 <ul>
                   <li><em><b>*</b>Redux</em></li>
-                  <li><em>Flux</em></li>
                 </ul>
               </li>
+              <li><em>React Native</em></li>
+              <li><em>Hugo</em></li>
               <li><em>Ember</em></li>
             </ul>
           </div>
@@ -51,8 +52,10 @@ class Home extends Component {
           <div className="skill-item clearfix">
             <h4>Server Side</h4>
             <ul>
-              <li><em>Node</em></li>
+              <li><em>Node.js</em></li>
               <li><em>Django</em></li>
+              <li><em>ROR</em></li>
+              <li><em>Hibernate</em></li>
             </ul>
           </div>
 
@@ -71,6 +74,7 @@ class Home extends Component {
             <ul className="clearfix">
               <li><em><b>*</b>Now.sh</em></li>
               <li><em>Heroku</em></li>
+              <li><em>Netlify</em></li>
               <li><em>Firebase</em></li>
               <li><em>Github Pages</em></li>
             </ul>
